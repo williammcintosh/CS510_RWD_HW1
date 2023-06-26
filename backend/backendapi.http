@@ -1,0 +1,27 @@
+GET http://localhost:8088/questions
+Accept: application/json
+
+OPTIONS http://localhost:8088/questions
+Access-Control-Request-Method: PUT
+Access-Control-Request-Headers: content-type
+Origin: https://not-origin.io
+
+###
+
+# curl -X OPTIONS localhost:3030/questions
+#-H "Access-Control-Request-Method: PUT"
+#-H "Access-Control-Request-Headers: content-type"
+#-H "Origin: https:/ /not-origin.io" –verbose
+OPTIONS http://localhost:8088/questions
+Access-Control-Request-Method: PUT
+Access-Control-Request-Headers: content-type
+Origin: https://not-origin.io
+
+###
+
+GET http://localhost:8088/questions
+Accept: application/json
+
+###
+GET https://google.com/ HTTP/1.1
+Accept: application/json
