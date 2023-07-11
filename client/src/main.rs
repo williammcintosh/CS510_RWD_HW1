@@ -71,9 +71,11 @@ async fn bug_2() -> anyhow::Result<()> {
 
     get_all_questions("1").await?;
 
+    get_all_questions("2").await?;
+
     delete_question("1").await?;
 
-    get_all_questions("2").await?;
+    get_all_questions("3").await?;
 
     println!("\n");
     Ok(())
@@ -111,7 +113,7 @@ async fn bug_4() -> anyhow::Result<()> {
     // Print out that response
     println!("
         \nBug 3:\
-        \nWe expect to never see two identical ids.
+        \nWe expect to see id's 0,2,3,4. Specifically, only id=1 being omitted.
     ");
 
     post_question("0").await?;
