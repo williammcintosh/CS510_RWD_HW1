@@ -1,4 +1,6 @@
-# Title
+# Bug 4
+
+## Title
 
 Deleting destroys all questions upto arg id
 

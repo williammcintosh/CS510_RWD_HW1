@@ -1,4 +1,6 @@
-# Title
+# Bug 1
+
+## Title
 
 Calling GET/questions Makes a Questions Post
 
