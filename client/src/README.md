@@ -1,4 +1,8 @@
-# Bug Report
+# Request Detectives - Bug Report
+
+# Author
+
+Will McIntosh
 
 # Bug 1
 
